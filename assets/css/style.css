@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
+
+:root{ 
+ --black : #020403;
+ --gray : #ADADAD;
+ --beige : #FFFFFF;
+ --pink : #FF69b4;
+ --grayPink : #F8EDE3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+ body{ 
+ background-color: var(--black); 
+ font-family: 'Rubik', sans-serif; 
+ overflow-x: hidden;
+} 
+
+/*-------------BARRA-------------*/
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    height: 80px;
+  }
+  
+  
+  #btn-menu{
+  display: none;
+  }
+  
+  
+  .nav-menu{
+     background-color: rgb(66, 48, 48);
+    color: var(--beige);
+     position: absolute;
+     width: 100%;
+     top: 80px;
+     left: -100%; /* left: 0 sobre escribir ayudaria aaprecer y desaparcer la barra*/
+     height: calc(100vh - 80px);
+     padding: 2rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+     transition: all .5s ;
+  }
+  
+  .nav-item{
+     list-style: none;
+     font-size: 1.25rem;
+  
+  }
+  
+  #btn-menu:checked ~ .nav-menu{
+      left: 0; 
+  
+  }
+
+.header-2{ 
+  text-align: center;
+
+}
+
+/*-------------PRESENTACION-------------*/
+
+
+
+
+.text{
+    text-align: center; 
+}
+
+h3{
+    color: var(--gray);
+    margin-bottom: .5rem;
+}
+
+h1{
+    color: var(--beige);
+} 
+
+.icon{
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center; 
+  
+}
+
+.icon1{
+    height: 40px;
+} 
+
+.icon2{
+    height: 40px;
+} 
+
+.icon3{
+    height: 40px;
+} 
+ 
+
+main{
+padding: 0 1.5rem;
+text-align: center;
+
+}
+
+
+/*-------------ACERCA DE MI-------------*/
+
+.section-h1{
+    padding: 2rem 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.h1-{
+    margin-bottom: 1rem;
+    color: var(--beige);
+    font-size: 30px;
+    text-align: center;
+    
+    
+
+} 
+
+.parrafo{ 
+    color: var(--beige);
+    padding: 1rem 1.5rem;
+    border-top: 5px solid var(--pink);
+
+}
+
+
+
+/*-------------MIS HABILIDADES-------------*/
+
+.h11-{
+    margin-bottom: 1rem;
+    color: var(--beige);
+    font-size: 30px;
+    text-align: center;
+    
+    
+}
+
+.habilidades{
+    width: 100%;
+    
+}
+
+.circle{
+   background-color: plum;
+   width: 100px;
+   height: 100px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+
+} 
+
+.h3-p{
+   margin: 1rem;
+   text-align: center;
+   color: var(--beige);
+  
+}
+
+.m-habili{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 3rem 0;
+ 
+}
+
+.m-habili2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    
+   }
+
+/*-------------EXPERIENCIA-------------*/
+
+
+.experiencia{
+
+    padding: 2rem 0;
+    max-width: 800px;
+    margin: 0 auto;
+  
+
+} 
+
+
+.h12-{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: var(--beige);
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+.experiencia-{
+    border-bottom: 3px solid var(--pink);  
+    padding: 1rem;
+    margin: 2rem;
+}
+
+        .mas-experiencia1{
+             text-align: center;
+            color: var(--beige);
+         } 
+
+        .web{
+            text-align: center;
+            color: var(--gray);
+        }
+
+.años-exp{
+    position: absolute;
+    color: var(--beige);
+
+}
+
+
+/*-------------PORTAFOLIO-------------*/
+
+.portafolio{
+  text-align: center; 
+  margin-top: 3rem;
+  
+} 
+
+.h111-{
+    margin-bottom: 1rem;
+    color: var(--beige);
+    font-size: 30px;
+    text-align: center;
+}
+
+.ptf-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 2rem; 
+    
+} 
+
+
+
+
+/*-------------CONTACTO-------------*/
+
+
+
+footer{
+    margin-top: 3rem;
+    margin-bottom: 3rem ;
+    overflow-x: hidden;
+} 
+ 
+
+.fondo{ 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;
+    align-items: center;
+    
+   
+}
+ 
+
+.contacto{
+    margin-bottom: 1rem;
+    color: var(--beige);
+    font-size: 30px;
+    text-align: center;
+}
+
+#circunferencia{
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+   
+   }
+
+.circol{
+   
+    border: 2px solid palevioletred;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+            
+}
+
+#circunferencia div{
+     padding: 30px 30px;
+   }
+
+    
+   #circunferencia div h4{
+    color: var(--beige);
+    font-size: 20px;
+    margin: 15px 0px;
+    text-align: center;
+   
+   }
+  
+   #circunferencia div p{
+    color: var(--gray);
+      font-size: 18px;
+   }
+
+
+.p{
+    font-size: 1rem;
+    color: var(--beige);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+/*           Vectores  */
+
+
+
+.vectores{ 
+     
+    display: flex;
+    justify-content: end;
+   
+}
+
+
+
+.hi{
+    border: 1px solid plum;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hi1{
+    border: 1px solid plum;
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.hi2{
+    border: 1px solid plum;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+/*-------------MEDIA QUERY-------------*/
+
+@media screen and (min-width: 680px) {
+    label{
+     display: none;
+    }
+
+    .nav-menu{
+      position: static;
+      min-height: auto;
+      flex-direction: row;
+      max-height: 80px;
+      justify-content: flex-end;
+      background-color: transparent;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .nav-item{
+      font-size: 1rem;
+    } 
+
+    .icon{
+        gap: 4rem;
+    } 
+
+    .ptf-images{
+   
+        flex-direction: row;
+        justify-content: center; 
+        margin-left: 1rem;
+        margin-right: 1rem;
+        gap: 2rem;
+    
+    } 
+    
+   .habilidades{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   }
+
+    
+}
