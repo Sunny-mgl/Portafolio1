@@ -41,7 +41,7 @@ nav{
   
   
   .nav-menu{
-     background-color: rgb(66, 48, 48);
+     background-color: rgba(66, 48, 48, 0.918);
     color: var(--beige);
      position: absolute;
      width: 100%;
