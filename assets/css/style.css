@@ -12,12 +12,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 } 
 
  body{ 
  background-color: var(--black); 
  font-family: 'Rubik', sans-serif; 
  overflow-x: hidden;
+
 } 
 
 /*-------------BARRA-------------*/
@@ -252,7 +254,7 @@ text-align: center;
 } 
 
 .h111-{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: var(--beige);
     font-size: 30px;
     text-align: center;
@@ -278,7 +280,7 @@ text-align: center;
 footer{
     margin-top: 3rem;
     margin-bottom: 3rem ;
-    overflow-x: hidden;
+  
 } 
  
 
@@ -353,12 +355,20 @@ footer{
 
 
 .vectores{ 
-     
-    display: flex;
-    justify-content: end;
+ display: flex;  
+ justify-content: end;  
+position: absolute;
+right: -13%;
+
+
    
 }
 
+.vectores2{
+   position: absolute;
+   left: -10%;
+   
+}
 
 
 .hi{
@@ -369,6 +379,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+  
 }
 
 .hi1{
@@ -378,7 +389,8 @@ footer{
     border-radius: 100%;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+   
 }
 
 .hi2{
@@ -388,7 +400,8 @@ footer{
     border-radius: 100%;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+  
 }
 
 /*-------------MEDIA QUERY-------------*/
@@ -433,5 +446,4 @@ footer{
     justify-content: center;
    }
 
-    
 }
