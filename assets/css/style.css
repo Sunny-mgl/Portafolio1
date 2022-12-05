@@ -18,7 +18,7 @@
  body{ 
  background-color: var(--black); 
  font-family: 'Rubik', sans-serif; 
- overflow-x: hidden;
+
 
 } 
 
@@ -244,6 +244,17 @@ text-align: center;
 
 }
 
+.años-exp2{
+    position: absolute;
+    color: var(--beige);
+}
+
+.años-exp3{
+    position: absolute;
+    color: var(--beige);
+}
+
+
 
 /*-------------PORTAFOLIO-------------*/
 
@@ -357,7 +368,7 @@ footer{
 .vectores{ 
  display: flex;  
  justify-content: end;  
-position: absolute;
+position: relative;
 right: -13%;
 
 
@@ -365,7 +376,7 @@ right: -13%;
 }
 
 .vectores2{
-   position: absolute;
+   position: relative;
    left: -10%;
    
 }
@@ -444,6 +455,24 @@ right: -13%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-   }
 
+    }
+    
+
+
+}   
+
+
+
+ @media screen and (min-width: 880px){
+   .vectores{
+        right: -1.5%;
+        bottom: -10%;
+       
+     }
+    
+     .vectores2{
+      left: -2.5%;
+     
+     }
 }
